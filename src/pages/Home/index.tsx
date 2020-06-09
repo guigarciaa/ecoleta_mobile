@@ -80,15 +80,15 @@ const Home = () => {
 
         <View style={styles.footer}>
           <RNPickerSelect
-            placeholder={{label: "Estado (UF)"}}
+            placeholder={{ label: "Estado (UF)" }}
             style={pickerSelectStyles}
-            onValueChange={(value)=>setSelectedUf(value)}
+            onValueChange={(value) => setSelectedUf(value)}
             items={ufs.map((uf) => ({ label: uf, value: uf, key: uf }))}
           />
           <RNPickerSelect
-                      placeholder={{label: "Selecione uma cidade"}}
+            placeholder={{ label: "Selecione uma cidade" }}
             style={pickerSelectStyles}
-            onValueChange={value=>setSelectedCity(value)}
+            onValueChange={(value) => setSelectedCity(value)}
             items={cities.map((city) => ({
               label: city,
               value: city,
